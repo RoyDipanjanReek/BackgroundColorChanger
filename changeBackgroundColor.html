@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change The BackGround backgroundColor</title>
+</head>
+<body style="background-color: black;">
+    <div class="container" style="display: flex;">
+        <div class="colorBox" id="red" style="height: 100px; width: 100px; background-color: red;"></div>
+        <div class="colorBox" id="green" style="height: 100px; width: 100px; background-color:green;"></div>
+        <div class="colorBox" id="yellow" style="height: 100px; width: 100px; background-color: yellow;"></div>
+        <div class="colorBox" id="violet" style="height: 100px; width: 100px; background-color: violet;"></div>
+        <div class="colorBox" id="blue" style="height: 100px; width: 100px; background-color: blue;"></div>
+    </div>
+</body>
+<script>
+    const button = document.querySelectorAll('.colorBox');
+    const body = document.querySelector('body');
+
+    button.forEach(function(button){
+        // console.log(button);
+        button.addEventListener('click',function(e){
+            if(e.target.id === 'red'){
+               body.style.backgroundColor = e.target.id;
+            }
+            if(e.target.id === 'green'){
+               body.style.backgroundColor = e.target.id;
+            }
+            if(e.target.id === 'yellow'){
+               body.style.backgroundColor = e.target.id;
+            }
+            if(e.target.id === 'violet'){
+               body.style.backgroundColor = e.target.id;
+            }
+            if(e.target.id === 'blue'){
+               body.style.backgroundColor = e.target.id;
+            }
+        })
+    })
+</script>
+</html>
